@@ -171,7 +171,7 @@ button:hover {
     text-decoration: none;
     animation: colors 5s infinite;
 }
-/* Floating Panel Inserted */
+
 .floating-panel {
     position: fixed;
     bottom: 20px;
@@ -221,6 +221,16 @@ button:hover {
     padding: 10px 15px;
     display: block;
     background-color: #211f2e;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #14131d;
+    color: #ffffff;
+    font-family: quicksand, verdana;
+    text-align: center;
 }
 
 .tabs {
