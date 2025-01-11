@@ -273,3 +273,9 @@ button:hover {
 .floating-panel.minimized .panel-header {
     background-color: #1a1d24;
 }
+
+.rickroll {
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+}
