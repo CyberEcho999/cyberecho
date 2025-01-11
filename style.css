@@ -1,17 +1,30 @@
+/*
+ ::::::::  :::   ::: :::::::::  :::::::::: :::::::::       :::::::::: ::::::::  :::    :::  ::::::::  
+:+:    :+: :+:   :+: :+:    :+: :+:        :+:    :+:      :+:       :+:    :+: :+:    :+: :+:    :+: 
++:+         +:+ +:+  +:+    +:+ +:+        +:+    +:+      +:+       +:+        +:+    +:+ +:+    +:+ 
++#+          +#++:   +#++:++#+  +#++:++#   +#++:++#:       +#++:++#  +#+        +#++:++#++ +#+    +:+ 
++#+           +#+    +#+    +#+ +#+        +#+    +#+      +#+       +#+        +#+    +#+ +#+    +#+ 
+#+#    #+#    #+#    #+#    #+# #+#        #+#    #+#      #+#       #+#    #+# #+#    #+# #+#    #+# 
+ ########     ###    #########  ########## ###    ###      ########## ########  ###    ###  ########  
+     C         Y         B           E         R                E         C         H          O
+Yes, I left notes, this site mostly because I don't remember shit on here
+*/
 body {
+    /*User Interaction Deny */
+    font-family: quicksand, verdana;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #14131d;
-    color: #ffffff;
-    font-family: quicksand, verdana;
+    /* Text stuff */
     text-align: center;
+    color: #ffffff;
+    /* Misc */
+    background-color: #14131d;
 }
-
-/* Banner CSS */
+/* Styling for banners */
 @keyframes slideIn {
     from {
         transform: translateX(-100%);
@@ -22,141 +35,155 @@ body {
         opacity: 1;
     }
 }
-
 .banner {
-    background-color: #5f43ff;
+    /* Coloring */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    color: #fff;
-    position: fixed;
-    left: 10px;
-    padding: 10px;
-    border-radius: 10px;
-
-    opacity: 1;
-    transform: translateX(0);
+    background-color: #5f43ff;
+    color: #ffffff;
+    /* Positioning */
     transition: transform 0.3s ease, opacity 0.3s ease, bottom 0.3s ease;
-    z-index: 1000;
+    transform: translateX(0);
+    margin-bottom: 10px;
     max-width: 300px;
+    position: fixed;
+    z-index: 1000;
+    padding: 10px;
     width: 100%;
+    left: 10px;
 }
-
 .banner.show {
+    /* Coloring */
     opacity: 1;
+    /* Positioning */
     transform: translateY(0);
 }
-
 .banner.hide {
+    /* Coloring */
     opacity: 0;
+    /* Deny user actions */
     pointer-events: none;
+    /* Positioning */
     transform: translateX(-120%);
 }
-
-.banner {
-    margin-bottom: 10px;
-}
-
+/* Skills container and other shit */
 .skillcontainer, .othershit {
-    border-radius: 10px;
+    /* Coloring */
     background-color: #211f2e;
-    max-width: 975px;
-    padding: 10px 15px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
-.inlineheaders {
-    display: inline;
-    margin-right: 10px;
-}
-
-.skillbox {
-    display: inline-block;
+    /* Positioning */
     border-radius: 10px;
-    background-color: #302d44;
-    max-width: 160px;
     padding: 10px 15px;
+    margin-top: 10px;
+    max-width: 975px;
+    margin: 0 auto;
+    width: 100%;
+    /* Extra Positioning */
     margin-bottom: 10px;
 }
-
+.inline {
+    /* Positioning */
+    margin-right: 10px;
+    display: inline;
+}
+.skillbox {
+    /* Coloring */
+    background-color: #302d44;
+    /* Positioning */
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    max-width: 160px;
+}
 progress {
+    /* Coloring */
+    background-color: #302d44;
+    /* Positioning */
+    border-radius: 50px;
     width: 100%;
     height: 20px;
-    border-radius: 50px;
-    background-color: #302d44;
 }
-
 progress::-webkit-progress-bar {
-    border-radius: 50px;
+    /* Coloring */
     background-color: #413d5c;
+    /* Positioning */
+    border-radius: 50px;
 }
-
 progress::-webkit-progress-value {
+    /* Coloring */
     background-color: rgb(73, 255, 73);
+    /* Positioning */
     border-radius: 50px;
 }
-
 progress::-moz-progress-bar {
+    /* Coloring */
     background-color: rgb(73, 255, 73);
+    /* Positioning */
     border-radius: 50px;
 }
-
 button {
+    /* Coloring */
+    transition: background-color 0.3s ease-in-out;
     background-color: #130e1b;
-    color: #fff;
+    color: #ffffff;
+    border: none;
+    /* Positioning */
     border-radius: 10px;
     padding: 10px 15px;
-    border: none;
-    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 5px;
     margin-right: 5px;
 }
-
 button:hover {
+    /* Coloring */
     background-color: #605a86;
     cursor: pointer;
 }
-
+/* Navbar */
 .navbar {
+    /* Coloring */
     background-color: #1b1524;
-    padding: 1rem;
+    /* Positioning */
     border-radius: 10px;
     margin-bottom: 10px;
+    padding: 1rem;
 }
 .navbar-container {
-    display: flex;
+    /* Positioning */
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
 }
 .navbar-logo {
-    color: #fff;
+    /* Coloring */
+    color: #ffffff;
     text-decoration: none;
 }
 .navbar-menu {
+    /* Positioning */
     display: flex;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 .navbar-button {
+    /* Coloring */
+    transition: color  0.3s, background-color 0.3s;
     background-color: #4e3d68;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    margin-left: 1.5rem;
-    cursor: pointer;
-    transition: color 0.3s, background-color 0.3s;
-    padding: 10px 15px;
-    border-radius: 10px;
+    color: #ffffff;
+    /* Positioning */
     font-family: 'Source Code Pro', sans-serif;
+    margin-left: 1.5rem;
+    border-radius: 10px;
+    padding: 10px 15px;
     font-weight: bold;
-    font-weight: bold;
+    cursor: pointer;
+    border: none;
 }
 .navbar-button:hover {
     background-color: #7c4dff;
-    color: #fff;
+    color: #ffffff;
 }
-
+/* Colors N Shit */
 @keyframes colors {
     0% { color: #ffb3ba; }
     20% { color: #ffffba; }
@@ -165,127 +192,141 @@ button:hover {
     80% { color: #ffdfba; }
     100% { color: #ffb3ba; }
 }
-
 .colorful, .sitename {
-    font-weight: bold;
-    text-decoration: none;
+    /* Colors */
     animation: colors 5s infinite;
+    /* Positioning */
+    text-decoration: none;
+    font-weight: bold;
 }
-
 .floating-panel {
+    /* Coloring */
+    transition: height 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #130e1b;
+    color: #e0e0e0;
+    /* Positioning */
+    border-radius: 10px;
+    overflow: hidden;
     position: fixed;
     bottom: 20px;
     right: 20px;
     width: 320px;
-    background-color: #130e1b;
     border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    overflow: hidden;
-    transition: height 0.3s ease, box-shadow 0.3s ease;
-    color: #e0e0e0;
 }
-
 .floating-panel:hover {
+    /* Coloring */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
 }
-
 .panel-header {
-    display: flex;
+    /* Coloring */
+    background-color: #1b1524;
+    color: #f0f0f0;
+    /* Positioning */
     justify-content: space-between;
     align-items: center;
     padding: 10px 15px;
-    background-color: #1b1524;
-    color: #f0f0f0;
     font-weight: bold;
     cursor: pointer;
     font-size: 14px;
+    display: flex;
 }
-
 .minimize-button {
-    background: none;
-    border: none;
+    /* Coloring */
+    transition: transform 0.2s ease;
     color: #f0f0f0;
-    font-size: 18px;
-    cursor: pointer;
+    background: none;
+    /* positioning */
     font-weight: bold;
     margin-left: 10px;
-    transition: transform 0.2s ease;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
 }
-
 .minimize-button:hover {
+    /* Positioning */
     transform: scale(1.2);
 }
-
 .panel-content {
+    /* Coloring */
+    background-color: #211f2e;
+    background-color: #14131d;
+    color: #ffffff;
+    /* Positioning */
+    font-family: quicksand, verdana;
     padding: 10px 15px;
     display: block;
-    background-color: #211f2e;
+    /* User Interaction Deny */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #14131d;
-    color: #ffffff;
-    font-family: quicksand, verdana;
     text-align: center;
 }
-
 .tabs {
+    /* Coloring */
+    border-bottom: 1px solid #5f43ff;
+    /* Positioning */
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid #5f43ff;
     padding-bottom: 8px;
     margin-bottom: 10px;
 }
-
 .tab {
-    flex: 1;
-    padding: 8px;
-    text-align: center;
-    cursor: pointer;
-    background-color: #5f43ff;
-    border-radius: 5px;
+    /* Coloring */
     transition: background-color 0.3s ease, color 0.3s ease;
-    font-size: 13px;
-    font-weight: bold;
+    background-color: #5f43ff;
     color: #bbb;
+    /* Positioning */
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 8px;
+    flex: 1;
 }
-
 .tab:not(.active):hover {
+    /* Coloring */
     background-color: #4e3d68;
     color: #fff;
 }
-
 .tab.active {
+    /* Coloring */
     background-color: #7c4dff;
     color: white;
 }
-
 .tab-content {
+    /* Coloring */
+    color: #ddd;
+    /* Positioning */
     display: none;
     font-size: 14px;
-    color: #ddd;
     line-height: 1.6;
 }
-
 .tab-content:not(.hidden) {
+    /* Positioning */
     display: block;
 }
 
 .floating-panel.minimized {
-    height: 50px;
+    /* Coloring */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Positioning */
+    height: 50px;
 }
 
 .floating-panel.minimized .panel-header {
+    /* Coloring */
     background-color: #1a1d24;
 }
 
 .rickroll {
+    /* Coloring */
+    color: #fff;
+    /* Positioning */
     height: 100vh;
     width: 100%;
-    color: #fff;
 }
